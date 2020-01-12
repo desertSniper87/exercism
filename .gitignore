@@ -7,6 +7,11 @@
 !java/*/src/*
 
 #Javascript
-#!*.js
+# Example javascript/space-age/space-age.js
+!*.js
+!javascript/*/*.js
+!javascript/*/*.json
+javascript/*/node_modules/*
+
 
 
