@@ -1,9 +1,8 @@
-/* eslint-disable no-unused-vars */
-//
-// This is only a SKELETON file for the 'Bob' exercise. It's been provided as a
-// convenience to get you started writing code faster.
-//
-
 export const hey = (message) => {
-  throw new Error("Remove this statement and implement this function");
+  if (message.slice(-1) === '?')
+    return 'Sure.';
+  if (message.toUpperCase() === message)
+    return 'Whoa, chill out!';
+  else 
+    return 'Whatever.';
 };
