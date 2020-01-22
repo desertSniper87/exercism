@@ -6,12 +6,15 @@
 !*.java
 !java/*/src/*
 
-#Javascript
+# Javascript
 # Example javascript/space-age/space-age.js
 !*.js
 !javascript/*/*.js
 !javascript/*/*.json
 javascript/*/node_modules/*
 
-
+# Bash
+# example bash/error-handling/error_handling.sh
+!*.sh
+!bash/*/*.sh
 
