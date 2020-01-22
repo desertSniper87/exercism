@@ -6,6 +6,7 @@ main () {
         echo "Hello, $name"
     else
         echo "Usage: ./error_handling <greetee>"
+        exit 1
     fi
 }
 
