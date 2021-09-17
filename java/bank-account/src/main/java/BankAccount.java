@@ -15,7 +15,7 @@ class BankAccount {
             return this.currentBalance;
     }
 
-    public void deposit(int amount) throws BankAccountActionInvalidException {
+    public synchronized void deposit(int amount) throws BankAccountActionInvalidException {
         if (!isOpen) {
             throw new BankAccountActionInvalidException("Account closed");
         }
@@ -28,7 +28,7 @@ class BankAccount {
     }
 
 
-    public void withdraw(int amount) throws BankAccountActionInvalidException {
+    public synchronized void withdraw(int amount) throws BankAccountActionInvalidException {
         if (!isOpen) {
             throw new BankAccountActionInvalidException("Account closed");
         }
