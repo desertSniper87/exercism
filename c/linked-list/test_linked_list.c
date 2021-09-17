@@ -19,13 +19,14 @@ void tearDown(void)
 
 static void test_pop_gets_element_from_the_list(void)
 {
+   TEST_IGNORE();
    list_push(list, 7);
    TEST_ASSERT_EQUAL(7, list_pop(list));
 }
 
 static void test_push_pop_respectively_add_remove_at_the_end_of_the_list(void)
 {
-   TEST_IGNORE();               // delete this line to run test
+//   TEST_IGNORE();               // delete this line to run test
    list_push(list, 11);
    list_push(list, 13);
    TEST_ASSERT_EQUAL(13, list_pop(list));
