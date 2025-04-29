@@ -1,14 +1,14 @@
 #ifndef LIST_OPS_H
 #define LIST_OPS_H
 
-#include <stdlib.h>
 #include <stdbool.h>
+#include <stdlib.h>
 
 typedef int list_element_t;
 
 typedef struct {
-   size_t length;
-   list_element_t elements[];
+    size_t length;
+    list_element_t *elements;
 } list_t;
 
 // constructs a new list
